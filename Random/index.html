@@ -1,0 +1,39 @@
+<html>
+    <head>
+        <title>This is Sample Html</title>
+        <link href="./index.css" rel="stylesheet" />
+    </head>
+    <body>
+
+        <img src="https://s3.amazonaws.com/uifaces/faces/twitter/jagan123/128.jpg" />
+        <h1 class="header_data" id="headerData">Employee Management Application</h1>
+        <h2 class="header_data" id="otherHeaderData">User Name is: Mayank Gupta</h2>
+        <h3 id="header_other">This is other Header</h3>
+        <div class="header_data" id="contentContainer">
+            <b>Employee Management</b> is a small application to display the list of Employees in a company.
+            <p>This is the application that we are further doing to create using Node, React and MongoDB</p>
+            <p>This application will keep on Expanding with time.</p>
+            <label>Is user Authorized ?</label><input type="checkbox" /><br/><br/>
+            <label>Enter User Name: </label> <input type="text" id="user_name" onkeyup="onValueChange()" /><br/><br/>
+
+            <input type="button" value="Click to Get Data" onclick="clickButtonFunction()" />
+            <input type="button" value="Click to Attach Class" onclick="attachClassFunction()" />
+            <hr/>
+        </div>
+
+        <div>
+            <b>Second Important Program</b><br/><br/>
+            <input type="text" id="user_input" onkeyup="updateVariableValue(this, event)"/>
+            <input type="button" value="Get Valiable Value" onclick="getVariableValue()" />
+        </div>
+
+        <script src="./index.js"></script>
+
+
+        <script>
+            document.getElementById("user_input").value = name;
+        </script>
+
+        
+    </body>
+</html>
